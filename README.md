@@ -14,4 +14,10 @@ command -> conda activate [ENVIRONMENT_NAME]/
 
 ## setup github
 
-initialize the git -> git init
+-initialize the git -> git init
+-add read me file -> git add README.md
+-add commit -> git commit -m "first commit"
+-get status -> git status
+-check out to main branch -> git branch -M main
+-add remote repo -> git remote add orgin [REPO_URL]
+-push the changes -> git push -u origin main
