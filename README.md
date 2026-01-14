@@ -21,3 +21,13 @@ command -> conda activate [ENVIRONMENT_NAME]/
 - check out to main branch -> git branch -M main
 - add remote repo -> git remote add orgin [REPO_URL]
 - push the changes -> git push -u origin main
+
+## setup.py
+
+setup.py file is responsible for creating the current machine learning for any other project as a package and even deploy in pypi.
+
+- -e . inside requiremnts.txt will trigger setup.py whenever the package is installed
+
+## src folder and build the package
+
+- install packages from requirements.tsxt -> pip install -r requirements.txt
