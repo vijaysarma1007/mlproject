@@ -3,6 +3,8 @@ import os
 import sys
 from src.exception import CustomExpection
 from src.logger import logging
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
@@ -38,5 +40,8 @@ class DataIngestion:
             raise CustomExpection(e, sys)
 
 if __name__=="__main__":
-    obj=DataIngestion()
-    obj.initiate_data_ingestion()
+    obj=DataIngestion();
+    train_data,test_data = obj.initiate_data_ingestion()
+
+    data_tranformation=DataTransformation();
+    data_tranformation.initiate_data_tranformation(train_data, test_data)
